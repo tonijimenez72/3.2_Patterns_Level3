@@ -53,9 +53,7 @@ public class ShoeStore {
                 }
             }
 
-            if (paymentMethod != null) {
-                paymentMethod.processPayment(amount, gateway);
-            }
+            paymentMethod.processPayment(amount, gateway);
         }
     }
 }
